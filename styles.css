@@ -33,4 +33,28 @@ body {
     margin-top: 20px;
 }
 
+/* Services Section */
+.services .card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1a73e8;
+}
+
 
