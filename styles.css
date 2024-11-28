@@ -57,4 +57,9 @@ footer a:hover {
     color: #1a73e8;
 }
 
-
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
