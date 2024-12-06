@@ -17,6 +17,16 @@ body {
     text-align: center;
 }
 
+.jumbotron::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /* Button Styling */
 .btn-primary {
     background-color: #1a73e8;
@@ -34,13 +44,21 @@ body {
 }
 
 /* Services Section */
-.services .card {
-    border: none;
-    transition: transform 0.2s;
+.ab-services .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.services .card:hover {
-    transform: scale(1.05);
+.ab-services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ab-project-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 /* Footer */
@@ -48,18 +66,145 @@ footer {
     background-color: #343a40;
 }
 
-footer a {
+footer .social-icons a {
     color: #f8f9fa;
     text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
 }
 
-footer a:hover {
+footer .social-icons a:hover {
     color: #1a73e8;
+    color: #ffdd57;
 }
 
-.project-image {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+@media (max-width: 768px) {
+    .project-image {
+        max-height: 190px;
+    }
 }
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffdd57;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffdd57;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-item .nav-link::before { /*Vendosja e ikonave para linkave*/
+    content: "\f015";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-item:nth-child(2) .nav-link::before { /*Moifikimi i Ikonave per secilin link*/
+    content: "\f007";
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link::before {
+    content: "\f013";
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link::before {
+    content: "\f291";
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link::before {
+    content: "\121";
+}
+.navbar-nav .nav-item:nth-child(6) .nav-link::before {
+    content: "\f03e";
+}
+.navbar-nav .nav-item:nth-child(7) .nav-link::before {
+    content: "\f086";
+}
+.navbar-nav .nav-item:nth-child(8) .nav-link::before {
+    content: "\f05a";
+}
+.navbar-nav .nav-item:nth-child(9) .nav-link::before {
+    content: "\f095";
+}
+.navbar-nav .nav-item:nth-child(10) .nav-link::before {
+    content: "\f15";
+}
+
+.navbar-brand {
+    color: lightblue !important;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0; 
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    color: #ffffff; 
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffdd57; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 4px; 
+}
+
+
+.navbar-nav .nav-item .nav-link:before {
+    content: "\f015"; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+    margin-right: 8px; 
+}
+
+
+.navbar-nav .nav-item:nth-child(2) .nav-link:before {
+    content: "\f007"; 
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:before {
+    content: "\f013"; 
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:before {
+    content: "\f291"; 
+}
+.navbar-nav .nav-item:nth-child(5) .nav-link:before {
+    content: "\f121"; 
+}
+.navbar-nav .nav-item:nth-child(6) .nav-link:before {
+    content: "\f03e"; 
+}
+.navbar-nav .nav-item:nth-child(7) .nav-link:before {
+    content: "\f086"; 
+}
+.navbar-nav .nav-item:nth-child(8) .nav-link:before {
+    content: "\f05a"; 
+}
+.navbar-nav .nav-item:nth-child(9) .nav-link:before {
+    content: "\f095"; 
+}
+.navbar-nav .nav-item:nth-child(10) .nav-link:before {
+    content: "\f15c"; 
+}
+
