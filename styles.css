@@ -282,14 +282,16 @@ footer .social-icons a:hover {
     color: #ffdd57;
 }
 
-/* Stilimi i Fotos t'ekipes */
-#ab-about-page .ab-team-photo {
+/* Team Photo Styling */
+#about-page .ab-about-container .ab-team-photo {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px; 
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1a73e8; 
 }
+
 
