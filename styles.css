@@ -291,7 +291,18 @@ footer .social-icons a:hover {
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #1a73e8; 
+    border: 2px solid #1a73e8;
+    animation: fadeIn 1.5s ease-in;
+    transition: transform 0.3s ease; 
+}
+
+#about-page .ab-about-container .ab-team-photo:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Stilimi i faqes services*/
@@ -315,13 +326,25 @@ footer .social-icons a:hover {
 
 #services-page .ab-service-image {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
     float: left;
-    display: block;
-    margin: 0 15px 15px;
+    margin: 0 15px 15px 0;
+    animation: fadeIn 1.5s ease-in;
+    transition: transform 0.3s ease;
     border: 2px solid #1a73e8;
+}
+
+#services-page .ab-service-image:hover {
+    transform: scale(1.1);
+}
+
+
+/* animacion fade */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #services-page .card-body h5 {
