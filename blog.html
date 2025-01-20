@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.52/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog - Scania Trans</title>
+</head>
+<body id="blog-page">
+    <!--Headeri dhe Navigacioni-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Scania Trans</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Permbajtja kryesore-->
+    <div class="container mt-4 ab-blog-container">
+        <h1>Our Blog</h1>
+        <p>Welcome to the Scania Trans Blog! Here, you'll find the latest news, tips, and stories about everything related to Scania trucks and our services.</p>
+
+        <!-- Postimi i theksum -->
+        <div class="featured-post mb-5">
+            <img src="C:\Users\PULSE Electronics\OneDrive\Pictures\Saved Pictures\SCANIA R LINE.jpeg" class="ab-featured-image" alt="Featured Post">
+            <h2>Introducing the All-New Scania R-Series</h2>
+            <p>Get an in-depth look at the innovative features and design of the new Scania R-Series. Read more to discover how it sets a new standard in performance and comfort.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+
+        <!-- Kategorit e Blogut -->
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Kategoria : Keshilla per mirmbajtjen e kamionit -->
+                <div class="category-section mb-5">
+                    <h3 class="category-title">Maintenance Tips for your truck</h3>
+                    <div class="card mb-4">
+                        <img src="C:\Users\PULSE Electronics\OneDrive\Pictures\Saved Pictures\Scania Truck tips.webp" class="card-img-top ab-blog-image" alt="Maintenance Tips">
+                        <div class="card-body">
+                            <h5 class="card-title">Essential Maintenance Tips for Your Scania Truck</h5>
+                            <p class="card-text">Learn how to keep your Scania truck running smoothly with these essential maintenance tips. From regular oil changes to tire care, discover the best practices for optimal performance and longevity.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historit e konsumatorit -->
+                <div class="category-section mb-5">
+                    <h3 class="category-title">Customer Stories</h3>
+                    <div class="card mb-4">
+                        <img src="C:\Users\PULSE Electronics\Downloads\Consumator.png" class="card-img-top ab-blog-image" alt="Customer Stories">
+                        <div class="card-body">
+                            <h5 class="card-title">A Journey with Scania Trans: Ferid's Story</h5>
+                            <p class="card-text">Discover how Ferid, a long-time Scania truck owner, has benefited from the reliability and performance of his truck. Read more to learn about his experiences and why he chooses Scania for his business.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kategoria : How to guides -->
+                <div class="category-section mb-5">
+                    <h3 class="category-title">How-To Guides</h3>
+                    <div class="card mb-4">
+                        <img src="C:\Users\PULSE Electronics\OneDrive\Pictures\Saved Pictures\mechanicdoingoilchange.webp" class="card-img-top ab-blog-image" alt="How-To Guides">
+                        <div class="card-body">
+                            <h5 class="card-title">Step-by-Step Guide to Performing a Scania Truck Oil Change</h5>
+                            <p class="card-text">Follow our detailed guide to learn how to perform an oil change on your Scania truck. This step-by-step tutorial will help you keep your truck running smoothly and efficiently.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Postimet e fundit -->
+                <div class="sidebar-section mb-4">
+                    <h4>Recent Posts</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Introducing the All-New Scania R-Series</a></li>
+                        <li><a href="#">Essential Maintenance Tips for Your Scania Truck</a></li>
+                        <li><a href="#">A journey with Scania: Ferid's Story</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kategorit -->
+                <div class="sidebar-section mb-4">
+                    <h4>Categories</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Maintenance Tips</a></li>
+                        <li><a href="#">Customer Stories</a></li>
+                        <li><a href="#">How-To Guides</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sign up -->
+                <div class="sidebar-section mb-4">
+                    <h4>Newsletter Signup</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe to get Notified about Scania Trans</button>
+                    </form>
+                </div>
+
+                <!-- Linkat e rrjetve sociale -->
+                <div class="sidebar-section mb-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-primary mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-primary mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-primary mx-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footeri -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>© 2024 Scania Trans. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@scaniatrans.com" class="text-white">info@scaniatrans.com</a> | Phone: +123 456 7890</p>
+            <div class="social-icons">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
