@@ -218,7 +218,71 @@ footer .social-icons a:hover {
     content: "\f15c"; 
 }
 
-/* stilim i kontinierit*/
+/* Rregullim gjeneral per paisje mobile HOME PAGE */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 50px 15px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .ab-services .card {
+        margin-bottom: 20px;
+    }
+
+    .ab-project-image {
+        max-height: 150px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 8px 10px;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* rregullime te metejshme per paisje mobile me te vogla HOME PAGE */
+@media (max-width: 480px) {
+    .jumbotron {
+        padding: 30px 10px;
+    }
+
+    .jumbotron h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .ab-services .card {
+        margin-bottom: 15px;
+    }
+
+    .ab-project-image {
+        max-height: 100px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 5px 8px;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+
+/* stilim i kontinierit ne about page*/
 #about-page .ab-about-container {
     margin-top: 20px;
     padding: 20px;
@@ -305,6 +369,70 @@ footer .social-icons a:hover {
     to { opacity: 1; }
 }
 
+/* Rregullim gjeneral per tableta ABOUT PAGE */
+@media (max-width: 768px) {
+    #about-page .ab-about-container {
+        padding: 15px;
+    }
+
+    #about-page .ab-about-container h1 {
+        font-size: 2rem;
+    }
+
+    #about-page .ab-about-container h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    #about-page .ab-about-container p {
+        font-size: 1rem;
+    }
+
+    #about-page .ab-about-container ul li {
+        font-size: 1rem;
+    }
+
+    #about-page .ab-about-container .ab-team-photo {
+        max-width: 300px;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Rregullim shtese per paisje mobile ABOUT PAGE */
+@media (max-width: 480px) {
+    #about-page .ab-about-container {
+        padding: 10px;
+    }
+
+    #about-page .ab-about-container h1 {
+        font-size: 1.8rem;
+    }
+
+    #about-page .ab-about-container h2 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    #about-page .ab-about-container p {
+        font-size: 0.9rem;
+    }
+
+    #about-page .ab-about-container ul li {
+        font-size: 0.9rem;
+    }
+
+    #about-page .ab-about-container .ab-team-photo {
+        max-width: 250px;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+
 /* Stilimi i faqes services*/
 #services-page .ab-services-container {
     padding: 20px;
@@ -374,6 +502,65 @@ footer .social-icons a:hover {
     color: #1a73e8;
     color: #ffdd57;
 }
+
+/* Rregullim gjeneral per tableta SERVICES PAGE */
+@media (max-width: 768px) {
+    #services-page .ab-services-container {
+        padding: 15px;
+    }
+
+    #services-page .ab-services-container h1 {
+        font-size: 2rem;
+    }
+
+    #services-page .ab-services-container p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    #services-page .ab-service-image {
+        max-width: 150px;
+        margin: 0 10px 10px 0;
+    }
+
+    #services-page .card-body h5 {
+        font-size: 1.3rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Rregullime te tjera per paisje mobile SERVICES PAGE */
+@media (max-width: 480px) {
+    #services-page .ab-services-container {
+        padding: 10px;
+    }
+
+    #services-page .ab-services-container h1 {
+        font-size: 1.8rem;
+    }
+
+    #services-page .ab-services-container p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    #services-page .ab-service-image {
+        max-width: 100px;
+        margin: 0 5px 5px 0;
+    }
+
+    #services-page .card-body h5 {
+        font-size: 1.2rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+
 
 /* Stilimi i Faqes te Produketve */
 #products-page .ab-products-container {
@@ -449,4 +636,301 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #1a73e8;
     color: #ffdd57;
+}
+
+/* Rregullim gjeneral per tableta PRODUCTS PAGE */
+@media (max-width: 768px) {
+    #products-page .ab-products-container {
+        padding: 15px;
+    }
+
+    #products-page .ab-products-container h1, #products-page .ab-products-container h2 {
+        font-size: 2rem;
+    }
+
+    #products-page .ab-products-container p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    #products-page .ab-product-image {
+        max-width: 250px;
+        height: 180px;
+    }
+
+    #products-page .card {
+        height: auto;
+    }
+
+    #products-page .card-body h5 {
+        font-size: 1.3rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Rregullime te metejshme per paisje mobile PRODUCTS PAGE */
+@media (max-width: 480px) {
+    #products-page .ab-products-container {
+        padding: 10px;
+    }
+
+    #products-page .ab-products-container h1, #products-page .ab-products-container h2 {
+        font-size: 1.8rem;
+    }
+
+    #products-page .ab-products-container p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    #products-page .ab-product-image {
+        max-width: 200px;
+        height: 150px;
+    }
+
+    #products-page .card {
+        height: auto;
+    }
+
+    #products-page .card-body h5 {
+        font-size: 1.2rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
+}
+
+
+/* Kontinieri kryesore per BLOG PAGE */
+.ab-blog-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ab-blog-container h1, .ab-blog-container h2, .ab-blog-container h3, .ab-blog-container h4 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+/* Stilimi i tekstit */
+.ab-blog-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Postimi i Theksuar */
+.featured-post img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #1a73e8;
+}
+
+.featured-post h2 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.featured-post p {
+    color: #555;
+}
+
+/* kategorit e seksioneve te blogut */
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-section .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.category-section .card img {
+    width: 100%;
+    height: auto;
+}
+
+.category-section .card-body {
+    padding: 15px;
+}
+
+.category-section .card-title {
+    color: #1a73e8;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.category-section .card-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Sidebari */
+.sidebar-section h4 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.sidebar-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-section ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.sidebar-section ul li a:hover {
+    color: #1a73e8;
+}
+
+/* Sign up me email */
+.sidebar-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.sidebar-section .btn-primary {
+    background-color: #1a73e8;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-section .btn-primary:hover {
+    background-color: #1558b0;
+}
+
+/* linkat e rrjetve sociale */
+.social-icons a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1558b0;
+}
+
+/* Footeri */
+footer {
+    background-color: #343a40;
+}
+
+footer p, footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1a73e8;
+}
+
+footer .social-icons a {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+}
+
+footer .social-icons a:hover {
+    color: #1a73e8;
+}
+
+/* Rregullim gjeneral per tableta BLOG PAGE*/
+@media (max-width: 768px) {
+    .ab-blog-container {
+        padding: 15px;
+    }
+
+    .ab-blog-container h1, .ab-blog-container h2, .ab-blog-container h3, .ab-blog-container h4 {
+        font-size: 1.5rem;
+    }
+
+    .ab-blog-container p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .featured-post img {
+        max-width: 500px;
+    }
+
+    .featured-post h2 {
+        font-size: 1.5rem;
+    }
+
+    .category-section .card-title {
+        font-size: 1.3rem;
+    }
+
+    .sidebar-section h4 {
+        font-size: 1.3rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Rregullime te tjera per paisje mobile BLOG PAGE */
+@media (max-width: 480px) {
+    .ab-blog-container {
+        padding: 10px;
+    }
+
+    .ab-blog-container h1, .ab-blog-container h2, .ab-blog-container h3, .ab-blog-container h4 {
+        font-size: 1.2rem;
+    }
+
+    .ab-blog-container p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .featured-post img {
+        max-width: 300px;
+    }
+
+    .featured-post h2 {
+        font-size: 1.2rem;
+    }
+
+    .category-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .sidebar-section h4 {
+        font-size: 1.1rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1rem;
+    }
 }
