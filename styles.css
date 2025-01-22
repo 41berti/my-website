@@ -934,3 +934,329 @@ footer .social-icons a:hover {
         font-size: 1rem;
     }
 }
+
+/* Stilim per faqen e galerise */
+#gallery-page .ab-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Ndreqe*/
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#gallery-page .gallery-item {
+    flex: 1 1 45%; 
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#gallery-page .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#gallery-page .gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+#gallery-page .caption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #1a73e8;
+}
+
+/* Lightbox styles  */
+.lightbox {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+/* Responsivitet*/
+@media (max-width: 768px) {
+    #gallery-page .gallery-item {
+        flex: 1 1 100%; 
+    }
+
+    #gallery-page .ab-gallery-container {
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery-page .gallery-item {
+        flex: 1 1 100%;
+    }
+
+    #gallery-page .ab-gallery-container {
+        padding: 10px; 
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer .social-icons a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #1a73e8;
+    color: #ffdd57;
+}
+
+/* Stilimi per faqen Testimonials */
+#testimonials-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#testimonials-page h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.testimonial-text {
+    margin-top: 20px;
+    min-height: 100px;
+}
+
+.client-name {
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+/* Dizajn responsiv */
+@media (max-width: 768px) {
+    #testimonials-page .container {
+        padding: 15px;
+    }
+
+    .testimonial-container {
+        font-size: 1rem;
+    }
+}
+
+/* Stilim per FAQ */
+#faq-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#faq-page h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.faq-question {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1a73e8;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: #555;
+}
+
+/* Dizajn responsiv*/
+@media (max-width: 768px) {
+    #faq-page .container {
+        padding: 15px;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+}
+
+/* Stilim per faqen Contact*/
+#contact-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contact-page h1,
+#contact-page h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.contact-form .btn {
+    background-color: #1a73e8;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.contact-form .btn:hover {
+    background-color: #0f58b3;
+}
+
+.map {
+    margin-top: 40px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Dizajn responsiv */
+@media (max-width: 768px) {
+    #contact-page .container {
+        padding: 15px;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
+
+/* Stilim per faqen Terms of service */
+#terms-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#terms-page h1,
+#terms-page h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#terms-page h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#terms-page p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#terms-page ul {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+#terms-page ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #terms-page .container {
+        padding: 15px;
+    }
+
+    #terms-page h1 {
+        font-size: 1.8rem;
+    }
+
+    #terms-page h3 {
+        font-size: 1.4rem;
+    }
+
+    #terms-page h4 {
+        font-size: 1.2rem;
+    }
+
+    #terms-page p,
+    #terms-page ul {
+        font-size: 1rem;
+    }
+}
